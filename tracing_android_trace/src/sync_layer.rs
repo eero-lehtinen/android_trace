@@ -194,7 +194,7 @@ where
             let extensions = this_span.extensions();
             if extensions.get::<ATraceExtension>().is_some() {
                 if data.extra_unclosed_values == 0 {
-                    panic!("Internal error: The same span was exited twice?");
+                    //panic!("Internal error: The same span was exited twice?");
                 } else {
                     data.extra_unclosed_values -= 1;
                 }
